@@ -88,6 +88,6 @@ def run_proxy_server(host='localhost', port=8080):
 
 if __name__ == "__main__":
     HOST = '0.0.0.0'
-    PORT = 8080
+    PORT = int(os.getenv("PORT", 8080))
     
     run_proxy_server(HOST, PORT)
