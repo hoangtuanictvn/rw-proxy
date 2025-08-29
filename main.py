@@ -87,7 +87,7 @@ def run_proxy_server(host='localhost', port=8080):
         httpd.server_close()
 
 if __name__ == "__main__":
-    HOST = 'localhost'
+    HOST = '0.0.0.0'
     PORT = 8080
     
     run_proxy_server(HOST, PORT)
